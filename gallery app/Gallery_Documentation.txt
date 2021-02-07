@@ -1,0 +1,19 @@
+Gallery:
+   It is a app which is useful to view your collection of images and set them as wall paper for your main mobile simulator app.
+
+   This gallery app is made using Tkinter as front end. It uses modules like pillow for opening and resizing the image. Pathlib module is used to get the paths of the images.
+
+Coding:
+	Images are viewed through a widget called label in Tkinter.
+        
+        The program run with 2 recursive function and one normal function.
+  
+        Forward (img_no):
+             This functions is used to show next image.
+         
+        Backward (img_no):
+             This functions is used to show previous image.
+
+        Wallpaper ():
+             This functions returns the path of the current image to the main app.
+

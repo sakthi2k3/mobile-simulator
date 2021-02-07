@@ -1,0 +1,37 @@
+Remainder App:
+          Remainder app is created to tabulate the to-do items with their deadline date and priority.
+
+FUNCTIONS:
+
+     1.	Remainder app is used to store the task name with their deadline date and priority. The app is designed in a way such that, the task’s names are arranged according to the user’s priority to the task.
+     2.	User can add, delete, and edit a task by selecting the desired task and clicking the appropriate buttons.
+     3.	User can also store the completed task by selecting the completed task name and clicking the “completed” button.
+
+
+CODING:
+        The Remainder app is designed using PySimpleGUI module, Tkinter module and file handling.
+       
+       •PySimpleGUI is used as a main user interface in this app
+       •Tkinter module is used to display the message box. This can be done by importing message box from tkinter.(code line: from tkinter import messagebox)
+       •Python file handling is used here to save the user details in text file.
+Try and except is used to catch the error easily. Each functions is called with a parameters named “values”. The Users button clicks and input text are accessed in PySimpleGUI using window.Read().Here we can also open our saved task by pressing “open” button in GUI .
+
+add_work():
+           This function is called using the parameter “values”. This function is used to add a new task and display it in the GUI as well as it writes the task in the desired ‘.txt’ file.
+
+delete_work():
+              This function is used to delete a particular task from the to-do list. This function delete the task name, deadline date and priority and rewrite the file with new changes.
+
+edit_work():
+             This function is used to edit a change in the to-do list. The order in which I edited the list is
+     
+     1.	Delete the selected task
+     2.	Delete the task from the particular .txt file 
+     3.	Add the edited task 
+     4.	Add the task in the particular .txt file 
+
+complete_work():
+       This function is used to store the completed task in a separate file. 
+
+NOTE:
+       Here, care must be taken when we write and read a file.

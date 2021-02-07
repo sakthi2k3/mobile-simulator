@@ -1,0 +1,23 @@
+DICT_DICTIONARY:
+         DICT_DICTIONARY app is similar to a English dictionary where we can find meaning to words.
+
+FUNCTIONS:
+     1.	This  app is used to find meanings to a word 
+     2.	The word is given as an input by the user.
+
+CODING:
+        In this app json, difflib and tkinter GUI are used. json file consisting of all the words and its meaning  is saved with the name data.json. 
+
+     1.	To read this file Json module is imported in the code.
+     2.	difflib module is used to fetch similar words for the users wrong input.
+     3.	Tkinter message box are used to display message boxes. 
+
+The GUI is arranged in definite position on the window using grid function.
+
+Get_bt():
+  This function is used to get user’s input. This function calls  get_meaning () function with user’s input as a parameter.get_meaning() is a function where the meaning for a word is found. The meaning of a word is found by searching the users input in the json file and displaying the meaning associated with it.
+
+Clr_bt():
+        In this app, the input is given in Entry widget. And the output is shown in Text widget. To clear this widget after use, clr_bt() function is used.
+NOTE:
+         Json file for dictionary should be downloaded from the internet, and should be stored in the same location as that of the code involving it.

@@ -1,0 +1,38 @@
+MINI MUSIC_PLAYER:
+             Mini-music_player is similar to a player were we can play, pause, and stop a song. The songs are played from the folder named “sounds”. Make sure that the “sounds” folder location is same as the python folder were you create the code for music_player
+
+FUNCTIONS:
+         1. The music name is displayed in the list box; the user can play the song by clicking the song name. The currently playing song name is displayed in the “music track” text box
+          2. User can play the next song by selecting the song name from the list box.
+          3. User can anytime pause and stop the song when the music_player code is running.
+
+CODING:      
+       This app is made using Tkinter GUI, Pygame module and Pathlib python module.   
+       
+       •Tkinter GUI is used to as aGUI to display the music_player app
+       •Pygame module is used to control the song like to pause and play a song.
+       •Pathlib is used to fetch the song names from the “sounds” folder the GUI ’s  list box
+
+
+music_names_load():
+                   This function is used to load the song name list box
+
+Pause_pressed(),upause_pressed(),stop_pressed():
+                   These functions are used to pause,unpause and stop a song.
+     
+      •	pygame.mixer.music.pause()
+      •	pygame.mixer.music.unpause()
+      •	pygame.mixer.music.stop ()
+      These are the pygame functions deployed here to pause, unpause and stop a song respectively.
+
+music_name_out():
+       This is the function which displays the current playing song name. Whenever the user selects a song in the list box, the selected song is displayed in the “Music track” text box using this function.
+
+Update_fn():
+       To change the button from pause to play and vice versa , this function is declared!
+
+
+Note:
+      To edit a widget’s text in Tkinter GUI, we have to declare it has stringVar()
+
+A normal variable can’t change the widget’s text from one to another, but assigning the widget’s text key as stringVar() we can make the change.

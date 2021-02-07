@@ -1,0 +1,62 @@
+Note Pad:
+
+    It is a simple Notepad to write, edit, and save data in a text format.
+
+    The GUI is simple and easy, and the users can easily browse around the app without any difficulties.
+
+Functions: 
+
+    1. Users can write their data in the text field. The text field is not limited, the users can scroll up and down using the scroll bar.
+
+    2. Users can open a file(.txt only) from anywhere in their system and the data will be displayed automatically in the text field.
+
+    3. Users can overwrite their existing file by clicking the save option, and if needed, they can also change the save destination using the save as option.
+
+    4. Users can anytime open a new empty file using the new option.
+
+    5. Font sizes and styles can be changed in the edit menu according to user preferences.
+
+Coding:
+
+    This app was made using PySimpleGui Module and an external code snippet from a file popup_select.py. 
+    The code consists of 6 functions, namely,
+
+	   new_file()
+	   open_file()
+	   save_file()
+	   save_as_file()
+	   font()
+	   font_size()
+
+    All the funtions are void functions, with no parameters and return values.
+    Each funtion opens a pop up window for user interaction and does the work accordingly.
+
+
+    new_file():
+
+        Empties the text field and if the file is not saved, a pop up window appears to prompt the user to save the file before opening a new file.
+
+    open_file():
+
+        A pop up window appears to get the selection from the user to open a file. If the previous is not saved, then the user is prompted with saving option. If a file is selected, then the previous data gets erased the data in the selected file is written in the text field.
+
+    save_file():
+
+        If the path exists for a given file, the save option overwrites the data and saves it in the same path. If the file path does not exist, then it calls the function save_as().
+
+    save_as():
+
+        The save_as function opens a pop up window and asks the user the path directory to save the file.
+
+    font():
+ 
+        The users can select their required font style in the font option and the font in the text field gets changed.
+
+    font_size():
+
+        A pop up window will ask the user to enter a integer value and the size gets changed respectively.
+
+
+
+
+

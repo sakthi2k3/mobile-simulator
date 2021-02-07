@@ -1,0 +1,47 @@
+Calculator:
+
+    A Calculator which performs all basic calculations like, Addition, Subtraction, Multiplication, Division and Percentage.
+
+    The input is done through a user friendly GUI, and all errors, such as Division by zero and exceeding Maximum limit is handled 
+
+Functions:
+
+    1. Users can click the numbers on the app, and the numbers are entered in the display screen.
+
+    2. Users can perform chain reactions, like, continuous add, subtract, multiply and divide without using the equal sign.
+
+    3. If User tries to divide by zero, the program throws an error.
+
+    4. Users can clear the display screen by using Clear All button.
+
+    5. Users can also use backspace when mistakes are made.
+
+
+Coding:
+
+    This app was made using PySimpleGui Module.
+    It has 4 functions, namely,
+
+	    add_number()
+	    set_opr()
+	    calculate()
+	    clear_screen()
+
+    Functions add_number() and set_opr() has one parameter, events and others are all void functions
+
+
+    add_number():
+
+         It gets the number clicked as an input and displays it on the display screen. The Display screen can only have values to 10^18. Greater than that will throw an Error Message in the Display Screen.
+
+    set_opr():
+
+         It has Two Variables which pass on their values alternatively. The first Operator pressed by the user will be stored in a variable, and until a next operator or '=' sign is pressed no calculations will take place. It calls the function calculate which performs the calculation.
+
+    calculate():
+
+         The calculate function has a bundle of 'if' statements to check what operator the user has pressed. Accordingly the calculations will take place and the result will be displayed on the screen. This function has also handled Zero Division Error.
+
+    clear_screen():
+
+         It sets all the global variable values to None and clears the Display Screen.

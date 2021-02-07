@@ -1,0 +1,37 @@
+Documentation:
+
+CowBoy Shooter:
+
+     A Goblin Shooter game, where the character has to shoot the goblins and collect coins to increase score. Once the goblins touches the character, the game is over.
+
+    The controls of the game are easy and effective; keyboard arrow key and space bar.
+
+    The game includes animation of characters and amazing sound effects. The design is based on The Old Wild West.
+
+Funtions:
+
+    1. The players can run the game, and play anywhere to pass the time.
+
+    2. The best score is saved and displayed in the game screen every time, so the player can always try and beat their high score.
+
+    3.The game gets challenging after level 5, as more number of goblins spawn on the either side of the screen.
+
+    4. Coins can be collected to increase the score.
+
+    5. Try yourself and see what's the best score you could get.
+
+
+Coding:
+
+    This app was made using Pygame zero Module and Random Module.
+    This app has around 35 functions. The two main functions which calls all the functions in the program are draw() and update().
+
+
+draw():
+
+    It draws all the required sprites and images required for the game and calls functions like, display() to show the score and best score, and other respective  functions to draw on the screen.
+
+update():
+
+    It has the functions which are needed for the movements and conditions of the game. 
+    It has all the animate functions of all the characters in the game and defines conditions such as, boundary, goblin kill check, score update, insertion of coins in random positions, and level check.
